@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="fonts/GothamPro/stylesheet.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <!-- Header -->
+      <header class="header">
+        <!-- Top Line -->
+        <div class="header__top">
+          <div class="container header__top_wrap">
+            <div class="d-flex ai-center header__top__point">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.2375 3.51807C0.562031 3.51807 0 4.0801 0 4.75557V16.2781C0 17.0017 0.596406 17.5981 1.32 17.5981H3.12125C3.33094 18.8459 4.41547 19.7981 5.72 19.7981C7.02453 19.7981 8.10906 18.8459 8.31875 17.5981H15.0013C15.2109 18.8459 16.2955 19.7981 17.6 19.7981C18.9045 19.7981 19.9891 18.8459 20.1987 17.5981H20.68C21.0461 17.5981 21.3675 17.4331 21.6012 17.1993C21.835 16.9656 22 16.6442 22 16.2781V12.0568C22 11.5618 21.8109 11.1081 21.6425 10.7643C21.4741 10.4206 21.2987 10.1731 21.2987 10.1731V10.1593L19.4975 7.73932H19.4837V7.72557C19.0936 7.23744 18.468 6.59807 17.6 6.59807H14.08C13.9219 6.59807 13.7775 6.62729 13.64 6.68057V4.79682C13.64 4.09213 13.0659 3.51807 12.3612 3.51807H1.2375ZM1.2375 4.39807H12.3612C12.5366 4.39807 12.76 4.6215 12.76 4.79682V16.7181H8.31875C8.10906 15.4703 7.02453 14.5181 5.72 14.5181C4.41547 14.5181 3.33094 15.4703 3.12125 16.7181H1.32C1.07594 16.7181 0.88 16.5221 0.88 16.2781V4.75557C0.88 4.55104 1.03297 4.39807 1.2375 4.39807ZM10.0925 6.41932L9.79 6.73557L6.22875 10.6406L3.91875 8.61932L3.34125 9.27932L3.67125 9.56807L5.95375 11.5893L6.28375 11.8781L6.5725 11.5618L10.45 7.34057L10.7387 7.01057L10.0925 6.41932ZM14.08 7.47807H15.84V11.4381C15.84 11.8042 16.005 12.1256 16.2388 12.3593C16.4725 12.5931 16.7939 12.7581 17.16 12.7581H21.12V16.2781C21.12 16.352 21.065 16.4706 20.9688 16.5668C20.8725 16.6631 20.7539 16.7181 20.68 16.7181H20.1987C19.9891 15.4703 18.9045 14.5181 17.6 14.5181C16.2955 14.5181 15.2109 15.4703 15.0013 16.7181H13.64V7.91807C13.64 7.84416 13.695 7.72557 13.7913 7.62932C13.8875 7.53307 14.0061 7.47807 14.08 7.47807ZM16.72 7.47807H17.6C17.9627 7.47807 18.468 7.88541 18.7825 8.27557L20.5837 10.6818L20.5975 10.6956C20.6061 10.7076 20.7247 10.876 20.8587 11.1493C20.9705 11.3762 21.0289 11.646 21.065 11.8781H17.16C17.0861 11.8781 16.9675 11.8231 16.8713 11.7268C16.775 11.6306 16.72 11.512 16.72 11.4381V7.47807ZM5.72 15.3981C6.69797 15.3981 7.48 16.1801 7.48 17.1581C7.48 18.136 6.69797 18.9181 5.72 18.9181C4.74203 18.9181 3.96 18.136 3.96 17.1581C3.96 16.1801 4.74203 15.3981 5.72 15.3981ZM17.6 15.3981C18.578 15.3981 19.36 16.1801 19.36 17.1581C19.36 18.136 18.578 18.9181 17.6 18.9181C16.622 18.9181 15.84 18.136 15.84 17.1581C15.84 16.1801 16.622 15.3981 17.6 15.3981Z"
+                  fill="#3F3E3D"
+                />
+              </svg>
+
+              <p>
+                Доставим сегодня с:
+
+                <span> 14:30 </span>
+              </p>
+            </div>
+
+            <div class="d-flex ai-center header__top__point">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.0039 0.44043C7.11434 0.44043 3.96387 3.5909 3.96387 7.48043C3.96387 10.6962 5.66199 14.1526 7.33262 16.8304C9.00324 19.5082 10.6739 21.4092 10.6739 21.4092C10.7581 21.5037 10.8784 21.5587 11.0039 21.5587C11.1293 21.5587 11.2497 21.5037 11.3339 21.4092C11.3339 21.4092 13.0062 19.4687 14.6751 16.7754C16.344 14.0821 18.0439 10.6343 18.0439 7.48043C18.0439 3.5909 14.8934 0.44043 11.0039 0.44043ZM11.0039 1.32043C14.419 1.32043 17.1639 4.06527 17.1639 7.48043C17.1639 10.3112 15.5637 13.6765 13.9326 16.3079C12.5662 18.5131 11.4095 19.9328 11.0039 20.4192C10.5948 19.9362 9.43809 18.5475 8.07512 16.3629C6.44574 13.7504 4.84387 10.38 4.84387 7.48043C4.84387 4.06527 7.58871 1.32043 11.0039 1.32043ZM11.0039 4.84043C9.30746 4.84043 7.92387 6.22402 7.92387 7.92043C7.92387 9.61684 9.30746 11.0004 11.0039 11.0004C12.7003 11.0004 14.0839 9.61684 14.0839 7.92043C14.0839 6.22402 12.7003 4.84043 11.0039 4.84043ZM11.0039 5.72043C12.2242 5.72043 13.2039 6.70012 13.2039 7.92043C13.2039 9.14074 12.2242 10.1204 11.0039 10.1204C9.78356 10.1204 8.80387 9.14074 8.80387 7.92043C8.80387 6.70012 9.78356 5.72043 11.0039 5.72043Z"
+                  fill="#3F3E3D"
+                />
+              </svg>
+
+              <p>
+                Ваш город:
+
+                <span> Москва </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Middle Line -->
+        <div class="header__middle">
+          <div class="container header__middle_wrap">
+            <!-- Logo -->
+            <a href="#" class="header__logo">
+              <img src="img/logo.svg" alt="" />
+              <p class="d-flex flex-column">
+                Одна Корзина
+
+                <span> Магазин продуктов </span>
+              </p>
+            </a>
+
+            <!-- Navigation -->
+            <ul class="header__menu">
+              <li>
+                <a href="#"> Акции </a>
+              </li>
+
+              <li>
+                <a href="#"> Бренды </a>
+              </li>
+
+              <li>
+                <a href="#"> Рецепты </a>
+              </li>
+
+              <li>
+                <a href="#"> Доставка и оплата </a>
+              </li>
+
+              <li>
+                <a href="#"> Магазины </a>
+              </li>
+            </ul>
+
+            <!-- Telephone -->
+            <a
+              href="tel:8 (800) 700-75-75"
+              class="d-flex flex-column header__phone"
+            >
+              8 (800) 700-75-75
+              <span> Звонок по России бесплатный </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bottom Line-->
+        <div class="header__bottom">
+          <div class="container header__bottom_wrap">
+            <button class="d-flex ai-center jc-between header__bottom__catalog">
+              <span class="d-flex ai-center jc-center">
+                <svg
+                  width="21"
+                  height="14"
+                  viewBox="0 0 21 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="21" height="2" rx="1" fill="white" />
+                  <rect y="6" width="21" height="2" rx="1" fill="white" />
+                  <rect y="12" width="21" height="2" rx="1" fill="white" />
+                </svg>
+
+                Каталог
+              </span>
+
+              <svg
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="header__bottom__catalog_arrow"
+              >
+                <path
+                  d="M1 1.5L6 6.5L11 1.5"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+
+            <div class="header__searchbar">
+              <input
+                type="text"
+                placeholder="Здесь может быть ваш запрос, например: Банан"
+              />
+              <button>
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.97712 0C12.3828 0 15.9542 3.6201 15.9542 8.08572C15.9542 9.88097 15.377 11.5396 14.4005 12.8812L21 19.5706L19.5898 21L13.0256 14.3464C11.6505 15.4871 9.89265 16.1714 7.97712 16.1714C3.57148 16.1714 0 12.5513 0 8.08572C0 3.6201 3.57148 0 7.97712 0ZM7.97712 15.2012C11.8541 15.2012 14.997 12.0155 14.997 8.08572C14.997 4.15598 11.8541 0.970287 7.97712 0.970287C4.10015 0.970287 0.957254 4.15598 0.957254 8.08572C0.957254 12.0155 4.10015 15.2012 7.97712 15.2012Z"
+                    fill="#3F3E3D"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="header__personal">
+              <a href="#" class="header__personal_favorite">
+                <img src="img/favorites_icon.svg" alt="" />
+                <span class="d-flex ai-center jc-center"> 5 </span>
+              </a>
+
+              <a href="#" class="d-flex ai-center header__personal_account">
+                <img src="img/lk.svg" alt="" />
+
+                <span class="dotted"> Войти </span>
+              </a>
+
+              <a href="#" class="d-flex ai-center header__personal_cart">
+                <img src="img/cart.svg" alt="" />
+
+                <p>
+                  1,246
+                  <span> ₽ </span>
+                </p>
+
+                <span class="d-flex ai-center jc-center cart_counter"> 5 </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Cart content -->
+      <div class="container cart-wrapper container-unset-mob">
+        <form class="cart" method="POST">
+          <div class="as-start cart__checkout">
+            <div class="cart__checkout-top">
+              <h2 class="subtitle">Ваша корзина</h2>
+
+              <div class="cart__checkout-progress">
+                <div class="cart_progress_status">
+                  <img src="img/progress-cart.svg" alt="" />
+
+                  <div class="cart_progress_status__text">
+                    До минимального заказа осталось:
+
+                    <p>1,534 <span> ₽ </span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Products -->
+
+            <div class="cart__checkout-products">
+              <!-- Product -->
+              <div class="cart__checkout-product">
+                <div class="d-flex jc-between">
+                  <div class="d-flex ai-center w-100">
+                    <div class="d-flex jc-center ai-center product-preview">
+                      <img src="img/product.png" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                      <div class="d-flex flex-column w-100 jc-between">
+                        <div class="d-flex jc-between">
+                          <h3>Апельсины Навелины Египет</h3>
+
+                          <a href="#">
+                            <img src="img/icons/remove_icon.svg" alt="" />
+                          </a>
+                        </div>
+
+                        <div class="d-flex jc-between">
+                          <div class="count-block">
+                            <span class="minusCount">
+                              <img src="img/icons/remove.svg" alt="remove" />
+                            </span>
+
+                            <input class="count" type="num" value="1" />
+
+                            <span class="plusCount">
+                              <img src="img/icons/add_icon.svg" alt="add" />
+                            </span>
+                          </div>
+
+                          <p class="product-price">370 <span>₽</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart__checkout-total d-flex jc-between">
+              <div class="cart-warning d-flex jc-between">
+                <img src="img/icons/info_icon.svg" alt="info" />
+
+                <p>
+                  Конечный вес продуктов может меняться после перезвешивания!
+                  Это может отразиться на конечной сумме заказа.
+                </p>
+              </div>
+
+              <div class="jc-between total-payment">
+                <span> Всего к оплате: </span>
+
+                <p class="total-payment-price">15,980 <span>₽</span></p>
+
+                <a href="#" class="dotted"> Очистить корзину </a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
