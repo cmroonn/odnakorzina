@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  {
+  if (window.innerWidth > 1170) {
     const header = document.querySelector(".header");
     const dataSide = document.querySelector(".cart__data");
     window.addEventListener("scroll", () => {
@@ -85,6 +85,38 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         header.classList.remove("header-minimize");
         dataSide.classList.remove("minimize");
+      }
+    });
+  }
+
+  {
+    $(".anchor").on("click", function (event) {
+      //отменяем стандартную обработку нажатия по ссылке
+      event.preventDefault();
+      //забираем идентификатор бока с атрибута href
+      var id = $(this).attr("href"),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+        top = $(id).offset().top;
+      //анимируем переход на расстояние - top за ВРЕМЯ мс
+      $("body,html").animate(
+        {
+          scrollTop: top - 130,
+        },
+        700
+      );
+    });
+
+    const toFillData = document.querySelector(".fixed_btn");
+
+    window.addEventListener("scroll", () => {
+      let scrollY = window.pageYOffset;
+
+      if (scrollY > 650) {
+        toFillData.classList.remove("show");
+      } else {
+        if (!toFillData.classList.contains("show")) {
+          toFillData.classList.add("show");
+        }
       }
     });
   }

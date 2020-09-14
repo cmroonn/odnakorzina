@@ -1741,3 +1741,48 @@ span.flatpickr-weekday {
 .main {
   position: relative;
   overflow: hidden; }
+
+.fixed_btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: white;
+  z-index: 1;
+  width: 100%;
+  height: 100px;
+  display: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  visibility: hidden; }
+  .fixed_btn a {
+    margin: auto;
+    color: white;
+    width: 248px;
+    height: 46px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px; }
+  @media screen and (max-width: 1170px) {
+    .fixed_btn {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .fixed_btn.show {
+        visibility: visible; } }
