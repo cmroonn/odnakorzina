@@ -835,6 +835,12 @@
 .cart_progress_status {
   position: relative;
   display: flex;
+  &:hover {
+    .cart_progress_status__tip {
+      opacity: 1;
+      transition: 0.2s ease;
+    }
+  }
 }
 
 .cart_progress_status_fill {
@@ -1266,6 +1272,9 @@ span.flatpickr-weekday {
 
   .cart__checkout-total {
     flex-direction: column;
+    .total-payment-price {
+      margin: 7px 0;
+    }
   }
 
   .jspVerticalBar {
@@ -1984,4 +1993,33 @@ span.flatpickr-weekday {
 
 .currency {
   font-family: "Montserrat", sans-serif;
+}
+
+.cart_progress_status__tip {
+  font-size: 14px;
+  color: rgba(63, 62, 61, 0.5);
+  padding: 11px 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  background: white;
+  z-index: 1;
+  max-width: fit-content;
+  border: 1px solid #e9e9e9;
+  opacity: 0;
+  transition: 0.3s ease-in;
+  top: -20px;
+
+  &:after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    transform: rotate(45deg);
+    background: white;
+    border: 1px solid #e9e9e9;
+    position: absolute;
+    bottom: -5px;
+    left: 25px;
+    border-top: unset;
+    border-left: unset;
+  }
 }
