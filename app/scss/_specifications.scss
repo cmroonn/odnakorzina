@@ -54,11 +54,19 @@ a {
   flex-direction: column;
 }
 
+.ai-end {
+  align-items: flex-end;
+}
+
+.jc-end {
+  justify-content: flex-end;
+}
 .container {
   max-width: 1200px;
   width: 100%;
   padding: 0 15px;
   margin: auto;
+  position: relative;
 }
 
 ul,
@@ -88,4 +96,30 @@ li {
     margin: 12px 0;
     opacity: 0.5;
   }
+}
+
+.btn {
+  background: #ee1944;
+  position: relative;
+  border-radius: 5px;
+  z-index: 1;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 80%;
+    transform: translate(-50%, 0);
+    height: 38px;
+    background: #ee1944;
+    opacity: 0.7;
+    filter: blur(10px);
+    border-radius: 5px;
+    z-index: -1;
+  }
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
