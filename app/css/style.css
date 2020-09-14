@@ -543,7 +543,7 @@ li {
 .cart__checkout-product .count-block {
   display: flex; }
   .cart__checkout-product .count-block .count {
-    width: 20px;
+    width: 40px;
     text-align: center;
     font-size: 22px;
     border: none;
