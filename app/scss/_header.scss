@@ -5,6 +5,15 @@
     width: 100%;
     z-index: 2;
   }
+
+  &.header-minimize {
+    .header__middle {
+      position: absolute;
+      transition: 0.4s ease;
+      opacity: 0;
+      z-index: -1;
+    }
+  }
 }
 
 .header__top {
@@ -117,6 +126,9 @@
   border-top: 1px solid #e9e9e9;
   border-bottom: 1px solid #e9e9e9;
   background: white;
+  width: 100%;
+  top: 0;
+  opacity: 1;
 
   @media screen and (max-width: 1170px) {
     display: none;
@@ -201,6 +213,7 @@
 
 .header__bottom {
   border-bottom: 1px solid #e9e9e9;
+  transition: 0.2s;
 }
 .header__bottom_wrap {
   display: flex;

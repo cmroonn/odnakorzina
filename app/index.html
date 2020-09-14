@@ -506,7 +506,7 @@
                   <input
                     type="text"
                     name="firstname"
-                    placeholder="Имя"
+                    placeholder="Имя*"
                     required
                     class="field"
                     tabindex="0"
@@ -517,7 +517,7 @@
                   <input
                     type="text"
                     name="lastname"
-                    placeholder="Фамилия"
+                    placeholder="Фамилия*"
                     required
                     tabindex="0"
                   />
@@ -526,7 +526,13 @@
 
               <div class="cart__data-input-row">
                 <label class="cart-input cart-input-full">
-                  <input type="email" name="email" placeholder="E-mail" />
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="E-mail*"
+                    class="field"
+                  />
                 </label>
               </div>
 
@@ -537,14 +543,19 @@
                     name="tel"
                     placeholder="Телефон*"
                     required
-                    class="field"
+                    class="telMask field"
                   />
                 </label>
               </div>
 
               <div class="cart__data-input-row cart__data__input__sms">
                 <label class="cart-input">
-                  <input type="text" name="sms-code" placeholder="Код из SMS" />
+                  <input
+                    type="text"
+                    name="sms-code"
+                    required
+                    placeholder="Код из SMS*"
+                  />
                 </label>
 
                 <div class="d-flex cart__data-sms">
@@ -564,7 +575,7 @@
                   <input
                     type="text"
                     name="address"
-                    placeholder="Адрес доставки"
+                    placeholder="Адрес доставки*"
                     required
                     class="field address-suggest-input"
                     autocomplete="off"
@@ -596,7 +607,7 @@
                   <input
                     type="text"
                     name="apartament"
-                    placeholder="Квартира"
+                    placeholder="Квартира*"
                     required
                     class="field"
                     autocomplete="off"
@@ -606,23 +617,11 @@
 
               <div class="cart__data-input-row cart__data__input_margin_min">
                 <label class="cart-input">
-                  <input
-                    type="floor"
-                    name="floor"
-                    placeholder="Этаж"
-                    required
-                    class="field"
-                  />
+                  <input type="floor" name="floor" placeholder="Этаж" />
                 </label>
 
                 <label class="cart-input">
-                  <input
-                    type="text"
-                    name="entrance"
-                    placeholder="Подъезд"
-                    required
-                    class="field"
-                  />
+                  <input type="text" name="entrance" placeholder="Подъезд" />
                 </label>
               </div>
 
@@ -752,7 +751,7 @@
                     </label> -->
 
                 <label class="cart-input">
-                  <input type="text" name="sms-code" placeholder="Промокод" />
+                  <input type="text" name="promocode" placeholder="Промокод" />
 
                   <div class="cart-input-delete">
                     <svg
@@ -821,6 +820,8 @@
                   type="checkbox"
                   value="Согласие на обработку персональных данных"
                   name="personal-data-checkbox"
+                  required
+                  checked
                 />
 
                 <span>
@@ -951,6 +952,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.3/flatpickr.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
     <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/approvejs/3.1.2/approve.min.js"></script>
     <script src="js/libs/timePicker.js"></script>

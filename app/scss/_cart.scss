@@ -380,6 +380,11 @@
   scrollbar-color: rgb(180, 180, 180) rgb(255, 255, 255);
   scrollbar-width: none;
 
+  &.minimize {
+    top: 130px;
+    max-height: calc(100vh - 130px);
+  }
+
   &::-webkit-scrollbar {
     width: 3px;
     background-color: rgb(255, 255, 255);
@@ -888,7 +893,7 @@
   font-weight: 500;
   font-size: 16px;
   border: none;
-
+  cursor: pointer;
   svg {
     margin-right: 9px;
   }

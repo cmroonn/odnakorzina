@@ -5,6 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("disabled");
   };
 
+  const telMask = IMask(document.querySelector(".telMask"), {
+    mask: "+{7}(000)000-00-00",
+  });
+
   // Date picker
   {
     try {
@@ -68,5 +72,20 @@ document.addEventListener("DOMContentLoaded", () => {
     } catch {
       return false;
     }
+  }
+
+  {
+    const header = document.querySelector(".header");
+    const dataSide = document.querySelector(".cart__data");
+    window.addEventListener("scroll", () => {
+      console.log(pageYOffset);
+      if (pageYOffset > 106) {
+        header.classList.add("header-minimize");
+        dataSide.classList.add("minimize");
+      } else {
+        header.classList.remove("header-minimize");
+        dataSide.classList.remove("minimize");
+      }
+    });
   }
 });
