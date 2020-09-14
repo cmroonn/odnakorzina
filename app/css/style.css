@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 /* Specifications */
 body {
   margin: 0;
@@ -1682,6 +1683,9 @@ span.flatpickr-weekday {
   .date-pick-body {
     top: 0;
     transform: translate(-50%, 0); } }
+
+.currency {
+  font-family: "Montserrat", sans-serif; }
 
 .main {
   position: relative;
