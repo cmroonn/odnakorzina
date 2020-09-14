@@ -543,12 +543,16 @@ li {
 .cart__checkout-product .count-block {
   display: flex; }
   .cart__checkout-product .count-block .count {
-    width: 40px;
+    width: 20px;
     text-align: center;
     font-size: 22px;
     border: none;
     color: #3f3e3d;
-    font-weight: 500; }
+    font-weight: 500;
+    padding: 0; }
+    .cart__checkout-product .count-block .count:disabled {
+      color: #3f3e3d;
+      opacity: 1; }
   .cart__checkout-product .count-block span {
     font-size: 22px;
     color: #141414;
