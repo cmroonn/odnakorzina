@@ -82,9 +82,15 @@ document.addEventListener("DOMContentLoaded", () => {
       if (pageYOffset > 106) {
         header.classList.add("header-minimize");
         dataSide.classList.add("minimize");
+        header
+          .querySelector(".header__bottom")
+          .classList.add("header__bottom_scrolled");
       } else {
         header.classList.remove("header-minimize");
         dataSide.classList.remove("minimize");
+        header
+          .querySelector(".header__bottom")
+          .classList.remove("header__bottom_scrolled");
       }
     });
   }
