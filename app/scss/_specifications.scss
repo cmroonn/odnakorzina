@@ -4,6 +4,10 @@ body {
   font-size: 16px;
   color: #3f3e3d;
   font-family: "Gotham Pro", sans-serif;
+
+  &.disabled {
+    overflow: hidden;
+  }
 }
 
 div,
@@ -122,4 +126,14 @@ li {
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+
+.color-gray {
+  color: rgba(20, 20, 20, .5);
+
 }

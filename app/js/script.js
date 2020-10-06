@@ -5,6 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("disabled");
   };
 
+  const bodyRemoveDisabled = () => {
+    document.body.classList.remove("disabled");
+  };
+
   const telMask = IMask(document.querySelector(".telMask"), {
     mask: "+{7}(000)000-00-00",
   });
@@ -123,6 +127,64 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!toFillData.classList.contains("show")) {
           toFillData.classList.add("show");
         }
+      }
+    });
+  }
+
+  // Choose city settings
+  {
+    const cityBtn = document.getElementById("usersCity");
+    const modal = document.querySelector(".choose-city");
+    const submit = document.getElementById("citySubmit");
+    const popup = document.querySelector(".choose-city_popup");
+    const openPopupBtn = document.getElementById("chooseCity");
+    const popupDesk = document.querySelector(".choose-city_popup-desk");
+    const popupMob = document.querySelector(".choose-city_popup-mob");
+    const closeButtons = document.querySelectorAll(
+      ".choose-city_popup-desk .close, .choose-city_popup-mob .close "
+    );
+
+    cityBtn.addEventListener("click", () => {
+      modal.classList.toggle("show");
+      setPosition(cityBtn);
+    });
+
+    const setPosition = (elem) => {
+      let position = elem.getBoundingClientRect(); // get position of elem
+      modal.style.top = position.top + 35 + "px";
+      modal.style.left = position.left - 85 + "px";
+    };
+
+    submit.addEventListener("click", (e) => {
+      e.preventDefault();
+      modal.classList.remove("show");
+    });
+
+    openPopupBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      modal.classList.remove("show");
+      popup.classList.add("show");
+      bodyAddDisabled();
+    });
+
+    popup.addEventListener("click", (e) => {
+      if (e.target == popup) {
+        popup.classList.remove("show");
+        bodyRemoveDisabled();
+      }
+    });
+
+    closeButtons.forEach((el) => {
+      el.addEventListener("click", () => {
+        el.parentElement.parentElement.classList.remove("show");
+        bodyRemoveDisabled();
+      });
+    });
+
+    document.body.addEventListener("click", (e) => {
+      let target = e.target;
+      if (!modal.contains(target) && target !== cityBtn) {
+        modal.classList.remove("show");
       }
     });
   }
